@@ -1,0 +1,52 @@
+@import "../variables";
+
+.about-me {
+  background-color: $background-color_grey;
+  height: 800px;
+
+  &__container {
+    position: relative;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 10;
+    top: 16px;
+    width: 100%;
+
+    .navbar {
+      &__list {
+        display: flex;
+        height: 100%;
+        gap: 65px;
+        align-items: center;
+      }
+
+      &__element {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .guitar-man {
+    position: relative;
+
+    &__image {
+      position: absolute;
+      left: 0;
+      top: 42px;
+    }
+
+    &__content {
+      position: absolute;
+      top: 235px;
+      right: 75px;
+      width: 372px;
+    }
+  }
+}

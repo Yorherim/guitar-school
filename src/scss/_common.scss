@@ -1,0 +1,69 @@
+@import "./variables";
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  gap: 32px;
+
+  &__lesson {
+    padding: 11px 24px;
+    width: 200px;
+    height: 60px;
+    background: #F28B64;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__questions {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 68px;
+}
+
+.divider {
+  height: 1px;
+  background-color: $color_black;
+  width: 65px;
+  margin-bottom: 5px;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 17px;
+
+  &__element {
+    border: 1px solid $color_blue;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

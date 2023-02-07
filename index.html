@@ -12,9 +12,54 @@
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <main class="main">
+      <section class="about-me">
+        <div class="container about-me__container">
+          <header class="about-me__header header">
+            <img src="src/img/logo.svg" alt="logo" class="header__logo" />
+            <nav class="header__navbar navbar">
+              <ul class="navbar__list">
+                <li class="navbar__element">обо мне</li>
+                <li class="navbar__element">занятия</li>
+                <li class="navbar__element">запись</li>
+              </ul>
+            </nav>
+          </header>
 
-    <main class="main"></main>
+          <div class="about-me__guitar-man guitar-man">
+            <img src="src/img/guitar-man.png" alt="guitar-man" class="guitar-man__image" />
+            <div class="guitar-man__content">
+              <ul class="guitar-man__links links">
+                <li class="links__element">
+                  <img src="src/icons/skype.svg" alt="skype icon" class="links__icon" />
+                </li>
+                <li class="links__element">
+                  <img src="src/icons/vk.svg" alt="vk icon" class="links__icon" />
+                </li>
+                <li class="links__element">
+                  <img src="src/icons/telegram.svg" alt="telegram icon" class="links__icon" />
+                </li>
+                <li class="links__element">
+                  <img src="src/icons/instagram.svg" alt="instagram icon" class="links__icon" />
+                </li>
+              </ul>
+              <h1 class="guitar-man__title title">Я Виктор</h1>
+              <div class="guitar-man__divider divider"></div>
+              <p class="guitar-man__text text">
+                Репетитор игры на гитаре с семилетним опытом преподавания
+              </p>
+              <div class="guitar-man__buttons buttons">
+                <button class="buttons__lesson">забронировать урок</button>
+                <button class="buttons__questions">
+                  <img src="src/icons/chat.svg" alt="chat icon">
+                  Есть вопросы?
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer"></footer>
   </body>
