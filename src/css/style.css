@@ -86,6 +86,10 @@ body {
   border-radius: 100%;
   width: 40px;
   height: 40px;
+}
+.links a {
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,11 +124,10 @@ body {
 }
 .about-me .guitar-man {
   position: relative;
+  display: flex;
 }
 .about-me .guitar-man__image {
-  position: absolute;
-  left: 0;
-  top: 42px;
+  padding-top: 42px;
 }
 .about-me .guitar-man__content {
   position: absolute;

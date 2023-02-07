@@ -35,11 +35,10 @@
 
   .guitar-man {
     position: relative;
+    display: flex;
 
     &__image {
-      position: absolute;
-      left: 0;
-      top: 42px;
+      padding-top: 42px;
     }
 
     &__content {
