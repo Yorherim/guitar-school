@@ -80,7 +80,6 @@ body {
   height: 1px;
   background-color: #000000;
   width: 65px;
-  margin-bottom: 5px;
 }
 
 .text {
@@ -106,17 +105,68 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 100%;
+  background: #fff;
 }
 .circle__inside_grey {
-  background: #C4C4C4;
-}
-.circle__inside_white {
-  background: #fff;
+  background: #c4c4c4;
 }
 .circle_big {
   padding: 47px;
   width: 282px;
   height: 282px;
+}
+
+.skill {
+  min-width: 360px;
+  min-height: 360px;
+  border-radius: 10px;
+  display: flex;
+  background: #E2E2E2;
+}
+.skill__guitar {
+  padding-top: 25px;
+}
+.skill__text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 163px;
+}
+.skill__text {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+  text-align-last: center;
+  transform: rotate(90deg);
+  max-width: 335px;
+}
+.skill_orange {
+  background: #f28b64;
+}
+.skill_blue {
+  background: #488aea;
+}
+
+.achievement {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.achievement__image {
+  height: 80px;
+  width: 80px;
+}
+.achievement__number {
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 600;
+}
+.achievement__text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
 }
 
 .about-me {
@@ -165,6 +215,9 @@ body {
 .about-me .guitar-man__links {
   padding-left: 10px;
 }
+.about-me .guitar-man__divider {
+  margin-bottom: 5px;
+}
 .about-me__circle {
   position: absolute;
 }
@@ -175,6 +228,44 @@ body {
 .about-me__circle-big {
   bottom: -125px;
   right: -125px;
+}
+
+.info__title {
+  padding: 32px 0 18px 0;
+}
+.info__divider {
+  width: 94px;
+  margin-bottom: 40px;
+}
+.info__skills-wrapper {
+  position: relative;
+}
+.info__skills {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.info__skill {
+  position: relative;
+  z-index: 10;
+}
+.info__achievements {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding-bottom: 100px;
+}
+.info__circle {
+  position: absolute;
+}
+.info__circle-left {
+  bottom: -36px;
+  left: -96px;
+}
+.info__circle-right {
+  right: -50px;
+  top: -90px;
 }
 
 /*# sourceMappingURL=style.css.map */
