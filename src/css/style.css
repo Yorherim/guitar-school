@@ -31,37 +31,49 @@ body {
   margin: 0 auto;
 }
 
+.links {
+  display: flex;
+  gap: 17px;
+}
+.links__element {
+  border: 1px solid #488aea;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.links a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .buttons {
   display: flex;
   gap: 32px;
 }
 .buttons__lesson {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
   padding: 11px 24px;
   width: 200px;
   height: 60px;
-  background: #F28B64;
+  background: #f28b64;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .buttons__questions {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 300;
   width: 140px;
   display: flex;
   align-items: center;
   gap: 12px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.title {
-  font-weight: 600;
-  font-size: 72px;
-  line-height: 68px;
 }
 
 .divider {
@@ -77,27 +89,41 @@ body {
   margin-bottom: 20px;
 }
 
-.links {
-  display: flex;
-  gap: 17px;
+.title {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 68px;
 }
-.links__element {
-  border: 1px solid #488AEA;
+
+.circle {
+  background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%);
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  padding: 32px;
+  width: 194px;
+  height: 194px;
 }
-.links a {
+.circle__inside {
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 100%;
+}
+.circle__inside_grey {
+  background: #C4C4C4;
+}
+.circle__inside_white {
+  background: #fff;
+}
+.circle_big {
+  padding: 47px;
+  width: 282px;
+  height: 282px;
 }
 
 .about-me {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   height: 800px;
+  position: relative;
+  overflow: hidden;
 }
 .about-me__container {
   position: relative;
@@ -117,9 +143,9 @@ body {
   align-items: center;
 }
 .about-me .header .navbar__element {
-  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
+  font-weight: 400;
   text-transform: capitalize;
 }
 .about-me .guitar-man {
@@ -134,6 +160,21 @@ body {
   top: 235px;
   right: 75px;
   width: 372px;
+  z-index: 10;
+}
+.about-me .guitar-man__links {
+  padding-left: 10px;
+}
+.about-me__circle {
+  position: absolute;
+}
+.about-me__circle-little {
+  top: 214px;
+  right: 34px;
+}
+.about-me__circle-big {
+  bottom: -125px;
+  right: -125px;
 }
 
 /*# sourceMappingURL=style.css.map */

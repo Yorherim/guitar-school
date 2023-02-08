@@ -1,0 +1,21 @@
+@use "../variables" as *;
+
+.links {
+  display: flex;
+  gap: 17px;
+
+  &__element {
+    border: 1px solid $color_blue;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+  }
+
+  a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

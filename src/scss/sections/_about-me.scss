@@ -1,8 +1,11 @@
-@import "../variables";
+@use "../variables" as *;
+@use "../mixins/font" as *;
 
 .about-me {
-  background-color: $background-color_grey;
+  background-color: $color_grey;
   height: 800px;
+  position: relative;
+  overflow: hidden;
 
   &__container {
     position: relative;
@@ -25,9 +28,7 @@
       }
 
       &__element {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
+        @include font(18px, 22px);
         text-transform: capitalize;
       }
     }
@@ -46,6 +47,26 @@
       top: 235px;
       right: 75px;
       width: 372px;
+      z-index: 10;
     }
+
+    &__links {
+      padding-left: 10px;
+    }
+  }
+
+  &__circle {
+    position: absolute;
+
+    &-little {
+      top: 214px;
+      right: 34px;
+    }
+
+    &-big {
+      bottom: -125px;
+      right: -125px;
+    }
+
   }
 }

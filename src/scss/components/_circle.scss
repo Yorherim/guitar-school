@@ -1,0 +1,32 @@
+.circle {
+  background: linear-gradient(
+    143.92deg,
+    rgba(237, 123, 80, 0.5) 14.85%,
+    rgba(72, 138, 234, 0.5) 53.25%,
+    rgba(44, 44, 44, 0.5) 85.74%
+  );
+  border-radius: 100%;
+  padding: 32px;
+  width: 194px;
+  height: 194px;
+
+  &__inside {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+
+    &_grey {
+      background: #C4C4C4;
+    }
+
+    &_white {
+      background: #fff;
+    }
+  }
+
+  &_big {
+    padding: 47px;
+    width: 282px;
+    height: 282px;
+  }
+}

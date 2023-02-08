@@ -1,0 +1,27 @@
+@use "../variables" as *;
+@use "../mixins/font" as *;
+
+.buttons {
+  display: flex;
+  gap: 32px;
+
+  &__lesson {
+    @include font(18px, 20px, 600);
+    padding: 11px 24px;
+    width: 200px;
+    height: 60px;
+    background: $color_orange;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    text-align: center;
+    color: $color_white;
+  }
+
+  &__questions {
+    @include font(16px, 18px, 300);
+    width: 140px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+}

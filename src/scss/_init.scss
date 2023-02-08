@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
-@import "variables";
+@use "./variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
 * {
   all: unset;
@@ -27,4 +27,9 @@ button:hover {
 body {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
