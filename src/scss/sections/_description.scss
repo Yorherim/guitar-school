@@ -1,0 +1,68 @@
+@use "../variables" as *;
+@use "../mixins/font" as *;
+
+.description {
+  background-color: $color_grey;
+  min-height: 640px;
+
+  &__container {
+    display: flex;
+    gap: 88px;
+  }
+
+  &__left-side {
+    display: flex;
+    align-items: center;
+    min-height: 640px;
+  }
+
+  &__box {
+    position: relative;
+    min-height: 319px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin-left: 155px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__circle {
+    position: absolute;
+    top: 0;
+    left: 97px;
+  }
+
+  &__ball {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__right-side {
+    padding: 46px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__second-title {
+    margin-bottom: 20px;
+
+    &:before {
+      width: 70px;
+    }
+  }
+
+  &__text {
+    @include font(18px, 22px);
+    margin-bottom: 30px;
+  }
+}

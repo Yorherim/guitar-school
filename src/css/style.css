@@ -71,6 +71,7 @@ body {
   line-height: 18px;
   font-weight: 300;
   width: 140px;
+  height: 60px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -92,6 +93,15 @@ body {
   font-weight: 600;
   font-size: 72px;
   line-height: 68px;
+  position: relative;
+}
+.title:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #000000;
+  width: 65px;
+  top: 68px;
 }
 
 .circle {
@@ -231,7 +241,12 @@ body {
 }
 
 .info__title {
-  padding: 32px 0 18px 0;
+  padding-top: 32px;
+  margin-bottom: 40px;
+}
+.info__title:before {
+  width: 94px;
+  top: 110px;
 }
 .info__divider {
   width: 94px;
@@ -266,6 +281,63 @@ body {
 .info__circle-right {
   right: -50px;
   top: -90px;
+}
+
+.description {
+  background-color: #f0f0f0;
+  min-height: 640px;
+}
+.description__container {
+  display: flex;
+  gap: 88px;
+}
+.description__left-side {
+  display: flex;
+  align-items: center;
+  min-height: 640px;
+}
+.description__box {
+  position: relative;
+  min-height: 319px;
+  display: flex;
+  align-items: center;
+}
+.description__title {
+  margin-left: 155px;
+  position: relative;
+  z-index: 10;
+}
+.description__circle {
+  position: absolute;
+  top: 0;
+  left: 97px;
+}
+.description__ball {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.description__right-side {
+  padding: 46px 0;
+  display: flex;
+  justify-content: center;
+}
+.description__box-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description__second-title {
+  margin-bottom: 20px;
+}
+.description__second-title:before {
+  width: 70px;
+}
+.description__text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

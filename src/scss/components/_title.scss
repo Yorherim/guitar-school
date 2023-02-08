@@ -1,5 +1,17 @@
+@use "../variables" as *;
+
 .title {
   font-weight: 600;
   font-size: 72px;
   line-height: 68px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: $color_black;
+    width: 65px;
+    top: 68px;
+  }
 }
