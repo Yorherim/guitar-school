@@ -1,24 +1,62 @@
 .footer {
   position: relative;
-  min-height: 272px;
+  //min-height: 272px;
 
   &__container {
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
   }
 
   &__box {
     max-width: 557px;
     padding: 40px 0;
+    position: relative;
+    z-index: 10;
   }
 
   &__title {
     margin-bottom: 20px;
+
+    @media (max-width: 1199px) {
+      font-size: 60px;
+      line-height: 60px;
+
+      &:before {
+        top: 62px;
+      }
+    }
+    @media (max-width: 991px) {
+      text-align: center;
+      font-size: 50px;
+      line-height: 50px;
+
+      &:before {
+        top: 50px;
+      }
+    }
+  }
+
+  &__links {
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+
   }
 
   &__image {
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @media (max-width: 1199px) {
+      width: 425px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
   }
 }

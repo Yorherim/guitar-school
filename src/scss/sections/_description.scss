@@ -7,13 +7,23 @@
 
   &__container {
     display: flex;
-    gap: 88px;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 1199px) {
+      gap: 0;
+    }
   }
 
   &__left-side {
     display: flex;
     align-items: center;
-    min-height: 640px;
+    justify-content: center;
+
+    @media (max-width: 1199px) {
+      padding-top: 50px;
+    }
   }
 
   &__box {
@@ -21,6 +31,8 @@
     min-height: 319px;
     display: flex;
     align-items: center;
+
+    max-height: 319px;
   }
 
   &__title {
@@ -45,6 +57,7 @@
     padding: 46px 0;
     display: flex;
     justify-content: center;
+    max-width: 538px;
   }
 
   &__box-right {
@@ -59,10 +72,24 @@
     &:before {
       width: 70px;
     }
+
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__text {
     @include font(18px, 22px);
     margin-bottom: 30px;
+
+    @media (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    @media (max-width: 1199px) {
+      justify-content: center;
+    }
   }
 }
