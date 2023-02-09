@@ -77,12 +77,6 @@ body {
   gap: 12px;
 }
 
-.divider {
-  height: 1px;
-  background-color: #000000;
-  width: 65px;
-}
-
 .text {
   font-size: 16px;
   line-height: 20px;
@@ -222,11 +216,11 @@ body {
   width: 372px;
   z-index: 10;
 }
+.about-me .guitar-man__title {
+  margin-bottom: 18px;
+}
 .about-me .guitar-man__links {
   padding-left: 10px;
-}
-.about-me .guitar-man__divider {
-  margin-bottom: 5px;
 }
 .about-me__circle {
   position: absolute;
@@ -247,10 +241,6 @@ body {
 .info__title:before {
   width: 94px;
   top: 110px;
-}
-.info__divider {
-  width: 94px;
-  margin-bottom: 40px;
 }
 .info__skills-wrapper {
   position: relative;
