@@ -330,4 +330,25 @@ body {
   margin-bottom: 30px;
 }
 
+.footer {
+  position: relative;
+  min-height: 272px;
+}
+.footer__container {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer__box {
+  max-width: 557px;
+  padding: 40px 0;
+}
+.footer__title {
+  margin-bottom: 20px;
+}
+.footer__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
