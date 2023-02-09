@@ -26,6 +26,10 @@ body {
   height: 100vh;
 }
 
+section, footer {
+  padding: 0 10px;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -125,7 +129,7 @@ body {
   min-height: 360px;
   border-radius: 10px;
   display: flex;
-  background: #E2E2E2;
+  background: #e2e2e2;
 }
 .skill__guitar {
   padding-top: 25px;
@@ -134,9 +138,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  max-width: 163px;
+  width: 163px;
 }
 .skill__text {
   font-size: 36px;
@@ -144,7 +146,6 @@ body {
   font-weight: 600;
   text-align-last: center;
   transform: rotate(90deg);
-  max-width: 335px;
 }
 .skill_orange {
   background: #f28b64;
@@ -161,6 +162,9 @@ body {
 .achievement__image {
   height: 80px;
   width: 80px;
+}
+.achievement__right-side {
+  max-width: 139px;
 }
 .achievement__number {
   font-size: 48px;
@@ -199,8 +203,11 @@ body {
 .about-me .header .navbar__element {
   font-size: 18px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: capitalize;
+}
+.about-me .header .navbar__element:hover {
+  cursor: pointer;
 }
 .about-me .guitar-man {
   position: relative;
@@ -248,8 +255,9 @@ body {
 .info__skills {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 .info__skill {
   position: relative;
@@ -257,9 +265,12 @@ body {
 }
 .info__achievements {
   display: flex;
-  justify-content: space-around;
-  gap: 40px;
+  justify-content: center;
+  gap: 35px;
   padding-bottom: 100px;
+  flex-wrap: wrap;
+  max-width: 1035px;
+  margin: 0 auto;
 }
 .info__circle {
   position: absolute;

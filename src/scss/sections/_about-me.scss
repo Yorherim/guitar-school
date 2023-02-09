@@ -28,8 +28,12 @@
       }
 
       &__element {
-        @include font(18px, 22px);
+        @include font(18px, 22px, 600);
         text-transform: capitalize;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

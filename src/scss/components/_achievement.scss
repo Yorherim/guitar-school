@@ -10,7 +10,9 @@
     width: 80px;
   }
 
-  &__right-side {}
+  &__right-side {
+    max-width: 139px;
+  }
 
   &__number {
     @include font(48px, 59px, 600);

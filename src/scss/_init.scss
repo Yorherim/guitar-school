@@ -29,6 +29,10 @@ body {
   height: 100vh;
 }
 
+section, footer {
+  padding: 0 10px;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
