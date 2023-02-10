@@ -7,8 +7,7 @@ for (let i = 0; i < anchors.length; i++) {
   if (href.length > 1) {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      document.querySelector(anchor.getAttribute('href'))
-        .scrollIntoView({ behavior: "smooth" });
+      document.querySelector(href).scrollIntoView({ behavior: "smooth" });
     });
   }
 }

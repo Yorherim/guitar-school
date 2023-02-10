@@ -12,6 +12,10 @@
     width: 300px;
     height: 300px;
   }
+  @media (max-width: 767px) {
+    width: 250px;
+    height: 250px;
+  }
 
   &__guitar {
     padding-top: 25px;
@@ -22,6 +26,10 @@
     justify-content: center;
     align-items: center;
     width: 163px;
+
+    @media (max-width: 767px) {
+      width: 118px;
+    }
   }
 
   &__text {
@@ -31,6 +39,10 @@
 
     @media (max-width: 991px) {
       font-size: 30px;
+    }
+    @media (max-width: 767px) {
+      font-size: 25px;
+      line-height: 27px;
     }
   }
 

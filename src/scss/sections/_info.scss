@@ -46,6 +46,16 @@
     @media (max-width: 991px) {
       padding-bottom: 30px;
     }
+    @media (max-width: 493px) {
+      display: block;
+      width: fit-content;
+    }
+  }
+
+  &__achievement {
+    @media (max-width: 493px) {
+      padding-bottom: 20px;
+    }
   }
 
   &__circle {
@@ -64,10 +74,7 @@
         left: -30px;
       }
       @media (max-width: 767px) {
-        //width: 540px;
-      }
-      @media (max-width: 575px) {
-        //width: 100%;
+        display: none;
       }
     }
 
@@ -82,10 +89,7 @@
         right: -30px;
       }
       @media (max-width: 767px) {
-        //width: 540px;
-      }
-      @media (max-width: 575px) {
-        //width: 100%;
+        display: none;
       }
     }
   }
