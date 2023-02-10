@@ -25,11 +25,9 @@
     justify-content: center;
 
     @media (max-width: 991px) {
-      padding-top: 50px;
-    }
-    @media (max-width: 575px) {
       display: none;
     }
+
   }
 
   &__box {
@@ -37,7 +35,6 @@
     min-height: 319px;
     display: flex;
     align-items: center;
-
     max-height: 319px;
   }
 

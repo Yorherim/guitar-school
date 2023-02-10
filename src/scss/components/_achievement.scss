@@ -8,6 +8,11 @@
   &__image {
     height: 80px;
     width: 80px;
+
+    @media (max-width: 767px) {
+      height: 70px;
+      width: 70px;
+    }
   }
 
   &__right-side {
@@ -16,6 +21,11 @@
 
   &__number {
     @include font(48px, 59px, 600);
+
+    @media (max-width: 767px) {
+      font-size: 40px;
+      line-height: 42px;
+    }
   }
 
   &__text {

@@ -1,0 +1,41 @@
+.hamburger {
+  display: none;
+  position: relative;
+  right: 10px;
+  z-index: 30;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__divider {
+    width: 30px;
+    height: 2px;
+    background: black;
+    transition: 0.3s ease-in;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &_active {
+    .hamburger__divider {
+      margin-bottom: -2px;
+
+      &:nth-child(1) {
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

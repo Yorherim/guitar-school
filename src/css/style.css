@@ -75,6 +75,7 @@ section, footer {
 
 .buttons {
   display: flex;
+  align-items: center;
   gap: 32px;
 }
 .buttons__lesson {
@@ -95,7 +96,6 @@ section, footer {
   line-height: 18px;
   font-weight: 300;
   width: 140px;
-  height: 60px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -211,6 +211,12 @@ section, footer {
   height: 80px;
   width: 80px;
 }
+@media (max-width: 767px) {
+  .achievement__image {
+    height: 70px;
+    width: 70px;
+  }
+}
 .achievement__right-side {
   max-width: 139px;
 }
@@ -219,10 +225,52 @@ section, footer {
   line-height: 59px;
   font-weight: 600;
 }
+@media (max-width: 767px) {
+  .achievement__number {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
 .achievement__text {
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+  right: 10px;
+  z-index: 30;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.hamburger__divider {
+  width: 30px;
+  height: 2px;
+  background: black;
+  transition: 0.3s ease-in;
+}
+.hamburger__divider:not(:last-child) {
+  margin-bottom: 5px;
+}
+.hamburger_active .hamburger__divider {
+  margin-bottom: -2px;
+}
+.hamburger_active .hamburger__divider:nth-child(1) {
+  transform: rotate(45deg);
+}
+.hamburger_active .hamburger__divider:nth-child(2) {
+  display: none;
+}
+.hamburger_active .hamburger__divider:nth-child(3) {
+  transform: rotate(-45deg);
+}
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
 }
 
 .about-me {
@@ -230,22 +278,68 @@ section, footer {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .about-me {
+    position: static;
+  }
+}
 .about-me__container {
   position: relative;
+}
+@media (max-width: 767px) {
+  .about-me__container {
+    position: static;
+  }
 }
 .about-me .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: absolute;
-  z-index: 10;
+  z-index: 15;
   top: 16px;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .about-me .header {
+    position: static;
+    padding-top: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .about-me .header__logo {
+    width: 115px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .header__logo {
+    width: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .header .navbar {
+    position: absolute;
+    right: -100%;
+    transition: 0.4s ease-in;
+    width: 50%;
+    height: 100vh;
+    z-index: 20;
+    top: 0;
+    padding: 10px;
+    background: #f28b64;
+  }
 }
 .about-me .header .navbar__list {
   display: flex;
   height: 100%;
   gap: 65px;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .about-me .header .navbar__list {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .about-me .header .navbar__element {
   font-size: 18px;
@@ -256,9 +350,12 @@ section, footer {
 .about-me .header .navbar__element:hover {
   cursor: pointer;
 }
+.about-me .header .navbar__menu-active {
+  right: -10px;
+  width: calc(100% + 20px);
+}
 .about-me .guitar-man {
   position: relative;
-  display: flex;
 }
 .about-me .guitar-man__image {
   padding-top: 42px;
@@ -266,6 +363,22 @@ section, footer {
 @media (max-width: 1199px) {
   .about-me .guitar-man__image {
     width: 720px;
+  }
+}
+@media (max-width: 991px) {
+  .about-me .guitar-man__image {
+    width: 520px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__image {
+    width: 400px;
+    padding-top: 0;
+  }
+}
+@media (max-width: 575px) {
+  .about-me .guitar-man__image {
+    display: none;
   }
 }
 .about-me .guitar-man__content {
@@ -281,11 +394,140 @@ section, footer {
     padding-left: 10px;
   }
 }
+@media (max-width: 991px) {
+  .about-me .guitar-man__content {
+    right: 40px;
+    top: 125px;
+    width: 305px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__content {
+    right: 0;
+    top: 50px;
+    width: 250px;
+  }
+}
+@media (max-width: 575px) {
+  .about-me .guitar-man__content {
+    position: static;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+}
 .about-me .guitar-man__title {
   margin-bottom: 18px;
 }
+@media (max-width: 991px) {
+  .about-me .guitar-man__title {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .about-me .guitar-man__title:before {
+    top: 63px;
+    width: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__title {
+    margin-bottom: 7px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .about-me .guitar-man__title:before {
+    top: 40px;
+    width: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .about-me .guitar-man__title {
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .about-me .guitar-man__text {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__text {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 575px) {
+  .about-me .guitar-man__text {
+    text-align: center;
+  }
+}
 .about-me .guitar-man__links {
   padding-left: 10px;
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__links {
+    padding-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  .about-me .guitar-man__links {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__links-element {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__links-element img {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__buttons {
+    gap: 5px;
+  }
+}
+@media (max-width: 575px) {
+  .about-me .guitar-man__buttons {
+    gap: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .about-me .guitar-man__buttons-lesson {
+    width: 160px;
+    height: 52px;
+    font-size: 15px;
+    line-height: 17px;
+    padding: 5px 13px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__buttons-lesson {
+    width: 115px;
+    height: 42px;
+    font-size: 12px;
+    line-height: 13px;
+    padding: 1px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me .guitar-man__buttons-questions {
+    font-size: 14px;
+    gap: 6px;
+  }
+  .about-me .guitar-man__buttons-questions img {
+    width: 60px;
+    height: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .about-me .guitar-man__buttons-questions img {
+    width: 45px;
+    height: 30px;
+  }
 }
 .about-me__circle {
   position: absolute;
@@ -299,9 +541,28 @@ section, footer {
     top: 180px;
   }
 }
+@media (max-width: 991px) {
+  .about-me__circle-little {
+    display: none;
+  }
+}
 .about-me__circle-big {
   bottom: -125px;
   right: -125px;
+}
+@media (max-width: 991px) {
+  .about-me__circle-big {
+    width: 194px;
+    height: 194px;
+    padding: 32px;
+    bottom: -90px;
+    right: -90px;
+  }
+}
+@media (max-width: 767px) {
+  .about-me__circle-big {
+    display: none;
+  }
 }
 
 .info__title {
@@ -315,6 +576,15 @@ section, footer {
 @media (max-width: 1199px) {
   .info__title {
     text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .info__title {
+    font-size: 60px;
+  }
+  .info__title:before {
+    width: 74px;
+    top: 104px;
   }
 }
 .info__skills-wrapper {
@@ -348,15 +618,19 @@ section, footer {
 @media (max-width: 991px) {
   .info__achievements {
     padding-bottom: 30px;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 498px;
   }
 }
-@media (max-width: 493px) {
+@media (max-width: 575px) {
   .info__achievements {
     display: block;
     width: fit-content;
+    padding-bottom: 20px;
   }
 }
-@media (max-width: 493px) {
+@media (max-width: 575px) {
   .info__achievement {
     padding-bottom: 20px;
   }
@@ -431,11 +705,6 @@ section, footer {
   justify-content: center;
 }
 @media (max-width: 991px) {
-  .description__left-side {
-    padding-top: 50px;
-  }
-}
-@media (max-width: 575px) {
   .description__left-side {
     display: none;
   }

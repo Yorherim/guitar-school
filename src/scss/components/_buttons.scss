@@ -3,6 +3,7 @@
 
 .buttons {
   display: flex;
+  align-items: center;
   gap: 32px;
 
   &__lesson {
@@ -20,7 +21,6 @@
   &__questions {
     @include font(16px, 18px, 300);
     width: 140px;
-    height: 60px;
     display: flex;
     align-items: center;
     gap: 12px;

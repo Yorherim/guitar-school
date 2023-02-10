@@ -11,3 +11,11 @@ for (let i = 0; i < anchors.length; i++) {
     });
   }
 }
+
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("hamburger_active");
+  navbar.classList.toggle("navbar__menu-active")
+});

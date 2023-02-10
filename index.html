@@ -43,7 +43,7 @@
         <div class="container about-me__container">
           <header class="about-me__header header">
             <img src="src/img/logo.svg" alt="logo" class="header__logo" />
-            <nav class="header__navbar navbar">
+            <nav class="header__navbar navbar ">
               <ul class="navbar__list">
                 <li class="navbar__element">
                   <a href="#description">обо мне</a>
@@ -56,28 +56,33 @@
                 </li>
               </ul>
             </nav>
+            <div class="header__hamburger hamburger">
+              <div class="hamburger__divider"></div>
+              <div class="hamburger__divider"></div>
+              <div class="hamburger__divider"></div>
+            </div>
           </header>
 
           <div class="about-me__guitar-man guitar-man">
             <img src="src/img/guitar-man.png" alt="guitar-man" class="guitar-man__image" />
             <div class="guitar-man__content">
               <ul class="guitar-man__links links">
-                <li class="links__element">
+                <li class="links__element guitar-man__links-element">
                   <a href="#">
                     <img src="src/icons/skype.svg" alt="skype icon" class="links__icon" />
                   </a>
                 </li>
-                <li class="links__element">
+                <li class="links__element guitar-man__links-element">
                   <a href="#">
                     <img src="src/icons/vk.svg" alt="vk icon" class="links__icon" />
                   </a>
                 </li>
-                <li class="links__element">
+                <li class="links__element guitar-man__links-element">
                   <a href="#">
                     <img src="src/icons/telegram.svg" alt="telegram icon" class="links__icon" />
                   </a>
                 </li>
-                <li class="links__element">
+                <li class="links__element guitar-man__links-element">
                   <a href="#">
                     <img src="src/icons/instagram.svg" alt="instagram icon" class="links__icon" />
                   </a>
@@ -88,8 +93,8 @@
                 Репетитор игры на гитаре с семилетним опытом преподавания
               </p>
               <div class="guitar-man__buttons buttons">
-                <button class="buttons__lesson">забронировать урок</button>
-                <button class="buttons__questions">
+                <button class="buttons__lesson guitar-man__buttons-lesson">забронировать урок</button>
+                <button class="buttons__questions guitar-man__buttons-questions">
                   <img src="src/icons/chat.svg" alt="chat icon" />
                   Есть вопросы?
                 </button>
@@ -223,6 +228,8 @@
           </div>
         </div>
       </section>
+
+
     </main>
 
     <footer class="footer">
