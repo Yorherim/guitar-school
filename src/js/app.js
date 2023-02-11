@@ -1,3 +1,5 @@
+import { checkWebp } from "./functions/index.js";
+
 const anchors = document.querySelectorAll("a[href^='#']");
 
 for (let i = 0; i < anchors.length; i++) {
@@ -17,5 +19,7 @@ const navbar = document.querySelector(".navbar");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("hamburger_active");
-  navbar.classList.toggle("navbar__menu-active")
+  navbar.classList.toggle("navbar__menu-active");
 });
+
+checkWebp();
